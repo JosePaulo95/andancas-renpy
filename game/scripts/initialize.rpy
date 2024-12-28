@@ -9,6 +9,7 @@ define lorenzo = Character("Lorenzo", color="#FF7F7F")         # Rosa vibrante, 
 define valentina = Character("Valentina", color="#6EB5FF")     # Azul claro, representando tranquilidade com um toque de rebeldia
 define enzo = Character("Enzo", color="#7BC97B")               # Verde, indicando traquinagem e curiosidade infantil
 define lorenzo_enzo_valentina = Character("Lorenzo, Enzo e Valentina", color="#FFAE42")  # Laranja, um tom que combina o caos dos três juntos
+define rubens = Character("Rubens", color="#7BC97B")
 
 # Definindo imagens
 image bg_cozinha = im.FactorScale("cozinha.jpg", 1.5)  # Aqui você coloca o arquivo da imagem do quarto
@@ -22,6 +23,7 @@ image seumirim = im.FactorScale("seumirim.png", 0.15)
 image sssocrates = im.FactorScale("sssocrates.png", 2)
 image cica = im.FactorScale("preguica.png", 0.7)
 image cuica = im.FactorScale("cuica.jpg", 1)
+image rubens = im.FactorScale("rubens.png", 1)
 
 # Definindo transições
 define dissolve = Dissolve(2.0)  # Transição dissolve (revela) a imagem em 2 segundos

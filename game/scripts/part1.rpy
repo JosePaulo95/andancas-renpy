@@ -1,4 +1,4 @@
-label start:
+label start1:
     # Mostra fundo preto inicialmente
     scene black with dissolve
     

@@ -1,32 +1,32 @@
-2024-11-29 20:53:22 UTC
+2024-12-18 23:21:31 UTC
 Windows-10-10.0.19041
 Ren'Py 8.2.1.24030407
 
-Early init took 0.06s
-Loading error handling took 0.12s
-Loading script took 1.45s
-Loading save slot metadata took 0.03s
+Early init took 0.08s
+Loading error handling took 0.07s
+Loading script took 0.47s
+Loading save slot metadata took 0.17s
 Loading persistent took 0.00s
-Running init code took 0.11s
-Loading analysis data took 0.00s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\5304\\AppData\\Roaming/RenPy/backups\\testeandancas2':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.04s
+
+File "game/scripts/part2-3.rpy", line 42: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+                                "Alguém sai de dentro do trator”
+
+File "game/scripts/part2-4.rpy", line 33: Only one say menuitem may exist per menu.
+    rubens "Uma pista de pouso? Mas, tão perto da comunidade?"
+                                                              ^
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.02s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.03s
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.5333'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 768) drawable=(1366, 768)
+Maximum texture size: 4096x4096
