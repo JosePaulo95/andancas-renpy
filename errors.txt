@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/part2-3.rpy", line 42: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-                                "Alguém sai de dentro do trator”
-
-File "game/scripts/part2-4.rpy", line 33: Only one say menuitem may exist per menu.
+File "game/scripts/part2-3.rpy", line 166: Only one say menuitem may exist per menu.
     rubens "Uma pista de pouso? Mas, tão perto da comunidade?"
                                                               ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Wed Dec 18 20:21:31 2024
+Sat Dec 28 21:04:43 2024

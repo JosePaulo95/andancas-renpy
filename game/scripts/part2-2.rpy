@@ -1,10 +1,8 @@
-label sai_dona_cuica:
-    hide cica with moveoutleft
-    pause 1
-    show rubens at center with moveinright
-    jump encontra_rubens
-
 label encontra_rubens:
+    scene bg_entrada_vila with dissolve
+    show rubens at right
+    pause 1
+    show tata at left with moveinleft
     tata "O Seu Mirim disse que viu uma movimentação por aqui, deve haver alguma pista."
     rubens "Bom dia, flor do dia."
     tata "E aí, Rubens!"

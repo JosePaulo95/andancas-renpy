@@ -1,8 +1,6 @@
-# label sair_de_casa:
 label sair_de_casa:
     jump indo_pra_vila
 
-# label start:
 label indo_pra_vila:
     scene bg_village with dissolve
     pause 1
@@ -164,3 +162,8 @@ label observar_a_confusao:
     tata "Umas duas semanas."
     cuica "Duas longas semanas..."
     jump sai_dona_cuica
+
+label sai_dona_cuica:
+    hide cica with moveoutleft
+    pause 1
+    jump encontra_rubens
