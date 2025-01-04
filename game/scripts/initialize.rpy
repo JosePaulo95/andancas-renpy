@@ -1,6 +1,14 @@
-﻿define tata = Character("Tatá", color="#E91940")
+﻿init python:
+    def beepy_voice(event, interact=True, **kwargs):
+        if not interact:
+            return
+
+        if event == "show":
+            renpy.sound.play("click2.ogg")
+
+define tata = Character("Tatá", color="#E91940", callback=beepy_voice)
 define coruja = Character("Coruja", color="#2B6B9C", window_xalign=1.0, window_right_padding=50)
-define getulio = Character("Getúlio", color="#E7B58A")
+define getulio = Character("Getúlio", color="#E7B58A", window_sound="click2.ogg")
 define seumirim = Character("Seu Mirim", color="#E59EAD")
 define sssocrates = Character("Sssocrates", color="#BDA0CB")   # Lilás claro, para um tom misterioso e excêntrico
 define cica = Character("Dona Clariça", color="#CC7A5B")       # Marrom claro, para um personagem sábio e com experiência
@@ -14,22 +22,23 @@ define rasgamortalha = Character("Rasga Mortalha", color="#F5F5F5")
 define billgarca = Character("Bill Garça", color="#F5F5F5")
 
 # Definindo imagens
-image bg_cozinha = im.FactorScale("cozinha.jpg", 1.5)  # Aqui você coloca o arquivo da imagem do quarto
-image bg_quarto = im.FactorScale("quarto.jpg", 3.3)  # Aqui você coloca o arquivo da imagem do quarto
-image bg_floresta = im.FactorScale("floresta-sombria.jpg", 1.5)  # Aqui você coloca o arquivo da imagem do quarto
-image bg_floresta_obras = im.FactorScale("bg_floresta_obras.jpg", 3)  # Aqui você coloca o arquivo da imagem do quarto
-image bg_village = im.FactorScale("village.png", 3.2)  # Aqui você coloca o arquivo da imagem do quarto
-image bg_entrada_vila = im.FactorScale("bg_entrada_vila.png", 4)  # Aqui você coloca o arquivo da imagem do quarto
+image bg_cozinha = im.FactorScale("v1/cozinha.jpg", 1.5)  # Aqui você coloca o arquivo da imagem do quarto
+image bg_quarto = im.FactorScale("v1/quarto.jpg", 3.3)  # Aqui você coloca o arquivo da imagem do quarto
+image bg_floresta = im.FactorScale("v1/floresta-sombria.jpg", 1.5)  # Aqui você coloca o arquivo da imagem do quarto
+image bg_floresta_obras = im.FactorScale("v1/bg_floresta_obras.jpg", 3)  # Aqui você coloca o arquivo da imagem do quarto
+image bg_village = im.FactorScale("v1/village.png", 3.2)  # Aqui você coloca o arquivo da imagem do quarto
+image bg_entrada_vila = im.FactorScale("v1/bg_entrada_vila.png", 4)  # Aqui você coloca o arquivo da imagem do quarto
 
 image black = "#000000"  # Usando a cor preta como uma imagem
-image getulio = im.FactorScale("getulio.png", 0.6)
-image seumirim = im.FactorScale("seumirim.png", 0.15)
-image sssocrates = im.FactorScale("sssocrates.png", 2)
-image cica = im.FactorScale("preguica.png", 0.7)
-image cuica = im.FactorScale("cuica.jpg", 1)
-image rubens = im.FactorScale("rubens.png", 1.5)
-image rasgamortalha = im.FactorScale("rasgamortalha.png", 0.8)
-image billgarca = im.FactorScale("bill-garca.png", 1.2)
+image tata = im.FactorScale(im.Flip("v2/tata.png", horizontal=True), 1)
+image getulio = im.FactorScale("v2/getulio.png", 1)
+image seumirim = im.FactorScale(im.Flip("v2/seumirim.png", horizontal=True), 1)
+image sssocrates = im.FactorScale("v2/sssocrates.png", 2)
+image cica = im.FactorScale("v2/preguica.png", 0.7)
+image cuica = im.FactorScale("v2/cuica.jpg", 1)
+image rubens = im.FactorScale("v2/rubens.png", 1.5)
+image rasgamortalha = im.FactorScale("v2/rasgamortalha.png", 0.8)
+image billgarca = im.FactorScale("v2/bill-garca.png", 1.2)
 
 # Definindo transições
 define dissolve = Dissolve(2.0)  # Transição dissolve (revela) a imagem em 2 segundos

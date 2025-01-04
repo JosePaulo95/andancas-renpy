@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/part2-3.rpy", line 166: Only one say menuitem may exist per menu.
-    rubens "Uma pista de pouso? Mas, tão perto da comunidade?"
-                                                              ^
+File "game/scripts/initialize.rpy", line 1: expected statement.
+    def low_beep(event, **kwargs):
+                ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sat Dec 28 21:04:43 2024
+Sat Jan  4 16:58:10 2025

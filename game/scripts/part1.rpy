@@ -8,6 +8,7 @@ label start:
     # O café é sentido enquanto a tela ainda está preta
     "Um delicioso cheiro de café entra pela porta do quarto. Lá fora os passarinhos já estão cantando."
     
+    # play sound "audio/Devonshire Waltz Moderato.mp3"
     # Revela gradualmente o quarto
     scene bg_quarto with dissolve
     
