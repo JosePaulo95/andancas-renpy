@@ -1,5 +1,6 @@
 label start:
     # Mostra fundo preto inicialmente
+    $ renpy.music.set_volume(0.0, delay=0, channel='music')
     scene black with dissolve
     
     tata "Sniff sniff..." 
@@ -7,8 +8,8 @@ label start:
     
     # O café é sentido enquanto a tela ainda está preta
     "Um delicioso cheiro de café entra pela porta do quarto. Lá fora os passarinhos já estão cantando."
-    
-    # play sound "audio/Devonshire Waltz Moderato.mp3"
+    play music "audio/Devonshire Waltz Moderato.mp3"
+    $ renpy.music.set_volume(1.0, delay=5.0, channel='music')
     # Revela gradualmente o quarto
     scene bg_quarto with dissolve
     
@@ -25,7 +26,10 @@ label start:
     # Volta ao fundo preto
     scene black with dissolve
     getulio "Tatá?"
+    $ renpy.music.set_volume(0.0, delay=5.0, channel='music')
     tata "Talvez o vô me deixe dormir mais uma horinha. Eu estava em um sonho tão bom... se eu fechar os olhos agora, acho que consigo retornar pra ele..."
+    play sound "audio/The Complex.mp3"
+    $ renpy.music.set_volume(1.0, delay=5.0, channel='music')
     tata "Estou em uma missão, atravessando a floresta sombria. Com minha armadura redonda de casca eu me sinto invencível."
     scene bg_floresta with dissolve
     show coruja at right
@@ -80,6 +84,7 @@ label preparo_garras:
     show bg_quarto with hpunch
     # with h_punch
     show tata
+    play sound "audio/Failing Defense.mp3"
     tata "Tudo está tremendo! Então aquela sensação foi real?"
     tata "Ah! O que é isso?!"
     "Um barulho muito forte. Do teto da toca começam a cair areias e pedras."
@@ -164,6 +169,7 @@ label meu_deus_o_que_foi_isso:
     tata "Vô...?"
     "Ding Dong"
     getulio "Ah, deve ser o Mirim. Pode entrar!"
+    play sound "audio/Devonshire Waltz Moderato.mp3"
      # sound há uma mudança de atmosfera, a trilha sonora fica mais acolhedora
     "O Seu Mirim entra na sala trazendo um bolo nas mãos."
     show seumirim at right with moveinright

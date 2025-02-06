@@ -1,14 +1,25 @@
 ﻿init python:
-    def beepy_voice(event, interact=True, **kwargs):
+    def tata_voice(event, interact=True, **kwargs):
         if not interact:
             return
-
         if event == "show":
-            renpy.sound.play("click2.ogg")
+            renpy.sound.play("click_003.ogg")
 
-define tata = Character("Tatá", color="#E91940", callback=beepy_voice)
+    def getulio_voice(event, interact=True, **kwargs):
+        if not interact:
+            return
+        if event == "show":
+            renpy.sound.play("select_004.ogg")
+    
+    def coruja_voice(event, interact=True, **kwargs):
+        if not interact:
+            return
+        if event == "show":
+            renpy.sound.play("scroll_005.ogg")
+
+define tata = Character("Tatá", color="#E91940")
 define coruja = Character("Coruja", color="#2B6B9C", window_xalign=1.0, window_right_padding=50)
-define getulio = Character("Getúlio", color="#E7B58A", window_sound="click2.ogg")
+define getulio = Character("Getúlio", color="#E7B58A")
 define seumirim = Character("Seu Mirim", color="#E59EAD")
 define sssocrates = Character("Sssocrates", color="#BDA0CB")   # Lilás claro, para um tom misterioso e excêntrico
 define cica = Character("Dona Clariça", color="#CC7A5B")       # Marrom claro, para um personagem sábio e com experiência
@@ -26,8 +37,8 @@ image bg_cozinha = im.FactorScale("v1/cozinha.jpg", 1.5)  # Aqui você coloca o 
 image bg_quarto = im.FactorScale("v1/quarto.jpg", 3.3)  # Aqui você coloca o arquivo da imagem do quarto
 image bg_floresta = im.FactorScale("v1/floresta-sombria.jpg", 1.5)  # Aqui você coloca o arquivo da imagem do quarto
 image bg_floresta_obras = im.FactorScale("v1/bg_floresta_obras.jpg", 3)  # Aqui você coloca o arquivo da imagem do quarto
-image bg_village = im.FactorScale("v1/village.png", 3.2)  # Aqui você coloca o arquivo da imagem do quarto
-image bg_entrada_vila = im.FactorScale("v1/bg_entrada_vila.png", 4)  # Aqui você coloca o arquivo da imagem do quarto
+image bg_village = im.FactorScale("v1/village.png", 3.2)
+image bg_entrada_vila = im.FactorScale("v1/bg_entrada_vila.png", 4)
 
 image black = "#000000"  # Usando a cor preta como uma imagem
 image tata = im.FactorScale(im.Flip("v2/tata.png", horizontal=True), 1)

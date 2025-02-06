@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/initialize.rpy", line 1: expected statement.
-    def low_beep(event, **kwargs):
-                ^
+File "game/scripts/initialize.rpy", line 16: invalid syntax
+    Character("Getúlio", color="#E7B58A", , callback=getulio_voice)
+                                           ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sat Jan  4 16:58:10 2025
+Mon Jan  6 18:26:47 2025
