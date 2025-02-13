@@ -21,7 +21,7 @@ define tata = Character("Tatá", color="#E91940")
 define coruja = Character("Coruja", color="#2B6B9C", window_xalign=1.0, window_right_padding=50)
 define getulio = Character("Getúlio", color="#E7B58A")
 define seumirim = Character("Seu Mirim", color="#E59EAD")
-define sssocrates = Character("Sssocrates", color="#BDA0CB")   # Lilás claro, para um tom misterioso e excêntrico
+define sssocrates = Character("Sssócrates", color="#BDA0CB")   # Lilás claro, para um tom misterioso e excêntrico
 define cica = Character("Dona Clariça", color="#CC7A5B")       # Marrom claro, para um personagem sábio e com experiência
 define cuica = Character("Carla", color="#DBA159")             # Âmbar, simbolizando energia e calma materna
 define lorenzo = Character("Lorenzo", color="#FF7F7F")         # Rosa vibrante, para dar destaque ao personagem emotivo
@@ -36,6 +36,7 @@ define billgarca = Character("Bill Garça", color="#F5F5F5")
 image bg_cozinha = im.FactorScale("v1/cozinha.jpg", 1.5)  # Aqui você coloca o arquivo da imagem do quarto
 image bg_quarto = im.FactorScale("v1/quarto.jpg", 3.3)  # Aqui você coloca o arquivo da imagem do quarto
 image bg_floresta = im.FactorScale("v1/floresta-sombria.jpg", 1.5)  # Aqui você coloca o arquivo da imagem do quarto
+image bg_colheita = im.FactorScale("v1/bg_colheita.jpg", 3.2)  # Aqui você coloca o arquivo da imagem do quarto
 image bg_floresta_obras = im.FactorScale("v1/bg_floresta_obras.jpg", 3)  # Aqui você coloca o arquivo da imagem do quarto
 image bg_village = im.FactorScale("v1/village.png", 3.2)
 image bg_entrada_vila = im.FactorScale("v1/bg_entrada_vila.png", 4)

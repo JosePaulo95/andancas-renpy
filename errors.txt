@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/initialize.rpy", line 16: invalid syntax
-    Character("Getúlio", color="#E7B58A", , callback=getulio_voice)
-                                           ^
+File "game/scripts/part2-4.rpy", line 2: expected statement.
+    start:
+         ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon Jan  6 18:26:47 2025
+Thu Feb 13 17:15:16 2025

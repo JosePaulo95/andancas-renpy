@@ -8,24 +8,24 @@ label indo_pra_vila:
     pause 1
     show sssocrates at center with moveinright
     pause 1
-    sssocrates "Ssser ou nao ssser... eiss a quesstão!"
+    sssocrates "Ssser ou não ssser... eiss a quesstão!"
     pause 1
-    tata "Bom dia, Seu Socrates."
-    sssocrates "Bom dia, sssenhorita. A pronuncia e 'Sssocrates'"
+    tata "Bom dia, Seu Sócrates."
+    sssocrates "Bom dia, sssenhorita. A pronúncia e 'Sssócrates'"
     tata "Desculpe Seu..."
     menu:
-        "Sssocrates":
+        "Sssócrates":
             jump socrates3s
-        "Ssssocrates":
+        "Ssssócrates":
             jump socrates4s
 
 label socrates3s:
-    sssocrates "Excsselente, Tata. Estáss cada vez melhor."
+    sssocrates "Excsselente, Tatá. Estáss cada vez melhor."
     tata "Agradecsssida!"
     jump dona_clarica
 
 label socrates4s:
-    sssocrates "Não! É Sssocrates! Com 'sss'!"
+    sssocrates "Não! É Sssócrates! Com 'sss'!"
     tata "Desssculpa!"
     jump dona_clarica
 
@@ -37,14 +37,14 @@ label dona_clarica:
     tata "Bom dia, dona Cica!"
     cica "zzzzz…."
     menu:
-        "melhor deixá-la dormir…":
+        "Melhor deixá-la dormir…":
             jump melhor_deixa_cica_dormir
         "BOM DIA, DONA CLARICA":
             jump grita_pra_cica
 
 label melhor_deixa_cica_dormir:
     "Me pergunto se ela tem sonhos malucos igual a mim..."
-    "Talvez ela sonhe tudo em camera lenta."
+    "Talvez ela sonhe tudo em câmera lenta."
     jump village_encontra_cuica
 
 label grita_pra_cica:
@@ -52,7 +52,7 @@ label grita_pra_cica:
     tata "Já amanheceu! É dia de feira!"
     cica "É verdade… hoje eu vou… uahhh… eu vou…"
     cica "hm… zzzz…."
-    "Hehe, nao tem jeito."
+    "Hehe, não tem jeito."
     jump village_encontra_cuica
 
 label village_encontra_cuica:
@@ -61,21 +61,21 @@ label village_encontra_cuica:
     show cuica at center with moveinright
     # <!--`Uma cuica com varios filhotes nas costas, Enzo, Lorenzo e Valentina um esta chorando`-->
     lorenzo "Buááá! Mãããe!!!"
-    valentina "Mãããe! O Enzo puxou a cauda do Lorenzo!"
+    valentina "Mãããe! O Enzo puxou a cauda do Lorenzo!" with hpunch
     enzo "Shhh! Sua cagueta!"
     valentina "Mããe! Olha do que ele me chamou!"
     cuica "Eu já falei pra parar, menino!"
     enzo "Mãe, mas ele fica me empurrando!"
     lorenzo "Buááá!!"
     menu:
-        "Bom dia, Dona Cuíca. Bom dia, criancas.":
+        "Bom dia, Dona Cuíca. Bom dia, crianças.":
             jump bom_dia_dona_cuica
         "(Observar a confusão)":
             jump observar_a_confusao
 
 # label start:
 label bom_dia_dona_cuica:
-    cuica "Bom dia, Tata! Aproveitando as férias?"
+    cuica "Bom dia, Tatá! Aproveitando as férias?"
     menu:
         "Claro!":
             jump claro

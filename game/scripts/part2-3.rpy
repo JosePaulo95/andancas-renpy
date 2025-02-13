@@ -175,6 +175,7 @@ label documento:
             pass
         "De quanto dinheiro estamos falando?":
             billgarca "Dinheiro suficiente. Está muito bem detalhado na documentação!"
+            rubens "Acho que minha família não vai curtir... vivemos aqui há muitas gerações..."
             pass
     billgarca "Com todo respeito, mas não vejo muita opção para vocês.. o progresso é inevitável!"
     billgarca "Agora, se me dão licença, nós iremos retornar para a cidade. Na próxima semana estremos de volta para completar a obra e esperamos uma resposta da parte de vocês sobre a venda dos terrenos."
@@ -188,4 +189,4 @@ label documento:
     "Eles sobem no trator e vão se distanciam, deixando na floresta um rastro de destruição."
     rubens "Que roubada..."
     tata "Vamos, precisamos avisar o pessoal da Vila!"
-    return
+    jump avisando_vovo

@@ -1,4 +1,5 @@
-label start:
+label start2:
+# label start:
     # Mostra fundo preto inicialmente
     $ renpy.music.set_volume(0.0, delay=0, channel='music')
     scene black with dissolve
@@ -235,12 +236,12 @@ label falar_o_minimo_possivel:
 label tocar_em_um_assunto_constrangedor:
     tata "Seu Mirim, a Dona Cuíca perguntou do senhor ontem..." #emotion
     seumirim "Q-quê?"
-    tata "Ela perguntou por que o senhor nao aparece mais lá pra dançar seresta com ela..."
+    tata "Ela perguntou por que o senhor não aparece mais lá pra dançar seresta com ela..."
     seumirim "Ora..." #emotion corado
     tata "Ela disse que o senhor é um dos melhores dançarinos da vila."
     seumirim "Um dos melhores? Então há outros?"
     menu:
-        "Eu ja vi ela dancando com o Senhor Socrates ":
+        "Eu ja vi ela dancando com o Senhor Sócrates ":
             jump eu_ja_vi_ela_dancando_com_o_senhor_socrates
         "Como o senhor eu aposto que nao":
             jump como_o_senhor_eu_aposto_que_nao

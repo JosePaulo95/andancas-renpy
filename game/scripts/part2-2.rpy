@@ -40,7 +40,7 @@ label menu_preocupada:
             tata "Claro… Mas, não é pra isso que eu estou aqui. Eu vim pra..."
             jump ver_pena
         "Tenho que fazer uma investigação.":
-            tata "Elementar, meu caro Watson... Estou procurando pistas..."
+            tata "Estou procurando pistas..."
             jump ver_pena
 
 label ver_pena:
