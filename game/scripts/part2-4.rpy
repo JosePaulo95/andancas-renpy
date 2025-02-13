@@ -3,6 +3,7 @@ define flipped = Transform(xzoom=-1)
 # label avisando_vovo:
 label start:
     scene bg_colheita with dissolve
+    show getulio at left, flipped
     show tata at right, flipped with moveinleft
     # <bg: um campo de macaxeiras em frente à toca de Tatá>
     tata "Vô!! O senhor não vai acreditar!"
@@ -26,10 +27,10 @@ label start:
     getulio "..."
     tata "Vô?"
     getulio "..."
-    "Ele está encarando o papel, pálido, olhos arregalados. É a mesma expressão de fez de manhã."
+    "Ele está encarando o papel, pálido, olhos arregalados. É a mesma expressão que fez de manhã."
     tata "Vô, o senhor está bem?"
     getulio "Sim, sim... desculpe... Obrigado, Tatá. Vou até a Vila mostrar esse arquivo. Precisamos reunir os moradores com urgência em uma assembleia... oh..."
-    "O vô Getúlio cai de joelhos no chão."
+    "O vô Getúlio cai de joelhos no chão." with hpunch
     tata "Vô!!"
     tata "Vou chamar um médico!"
     getulio "Não, não, foi só uma tontura… eu já estou bem, está vendo?”"

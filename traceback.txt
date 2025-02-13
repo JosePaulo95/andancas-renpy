@@ -1,32 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/part2-4.rpy", line 4, in script
-    show tata at right, xzoom -1 with moveinleft
-  File "game/scripts/part2-4.rpy", line 4, in <module>
-    show tata at right, xzoom -1 with moveinleft
-NameError: name 'xzoom' is not defined
+  File "game/scripts/part2-4.rpy", line 33, in script
+    "O vô Getúlio cai de joelhos no chão." with h_punch
+  File "game/scripts/part2-4.rpy", line 33, in <module>
+    "O vô Getúlio cai de joelhos no chão." with h_punch
+NameError: name 'h_punch' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/part2-4.rpy", line 4, in script
-    show tata at right, xzoom -1 with moveinleft
-  File "C:\Users\5304\Downloads\instaladores\renpy-8.2.1-sdk\renpy\ast.py", line 1113, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\5304\Downloads\instaladores\renpy-8.2.1-sdk\renpy\ast.py", line 1072, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Users\5304\Downloads\instaladores\renpy-8.2.1-sdk\renpy\ast.py", line 1072, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "game/scripts/part2-4.rpy", line 33, in script
+    "O vô Getúlio cai de joelhos no chão." with h_punch
+  File "C:\Users\5304\Downloads\instaladores\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "C:\Users\5304\Downloads\instaladores\renpy-8.2.1-sdk\renpy\ast.py", line 614, in execute
+    say_menu_with(self.with_, renpy.game.interface.set_transition)
+  File "C:\Users\5304\Downloads\instaladores\renpy-8.2.1-sdk\renpy\ast.py", line 429, in say_menu_with
+    what = renpy.python.py_eval(expression)
   File "C:\Users\5304\Downloads\instaladores\renpy-8.2.1-sdk\renpy\python.py", line 1209, in py_eval
     return py_eval_bytecode(code, globals, locals)
   File "C:\Users\5304\Downloads\instaladores\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/scripts/part2-4.rpy", line 4, in <module>
-    show tata at right, xzoom -1 with moveinleft
-NameError: name 'xzoom' is not defined
+  File "game/scripts/part2-4.rpy", line 33, in <module>
+    "O vô Getúlio cai de joelhos no chão." with h_punch
+NameError: name 'h_punch' is not defined
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.2.1.24030407
 testeandancas2 1.0
-Thu Feb 13 17:15:55 2025
+Thu Feb 13 18:13:39 2025
