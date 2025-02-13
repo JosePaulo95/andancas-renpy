@@ -1,0 +1,15 @@
+# Arquivos compilados e de cache
+*.rpyc
+*.rpa
+*.pyc
+__pycache__/
+cache/
+log/
+
+# Saves e persistência do jogador
+*.save
+*.sav
+persistent
+
+# Build do jogo
+build/
