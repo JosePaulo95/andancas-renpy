@@ -47,7 +47,7 @@ image bg_entrada_vila = im.FactorScale("v1/bg_entrada_vila.png", 4)
 image black = "#000000"  # Usando a cor preta como uma imagem
 image tata = im.FactorScale(im.Flip("v2/tata.png", horizontal=True), 1)
 image getulio = im.FactorScale("v3/getulio.png", 1)
-image seumirim = im.FactorScale("v3/seumirim.png", 0.6)
+image seumirim = im.FactorScale(im.Flip("v2/seumirim.png", horizontal=True), 1)
 image sssocrates = im.FactorScale("v3/sssocrates.png", 1)
 image cica = im.FactorScale("v2/preguica.png", 0.7)
 image cuica = im.FactorScale("v3/cuica.png", 1)
