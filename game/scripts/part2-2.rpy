@@ -1,5 +1,5 @@
 label encontra_rubens:
-    scene bg_entrada_vila with dissolve
+    scene bg_village_tarde with dissolve
     show rubens at right
     pause 1
     show tata at left with moveinleft

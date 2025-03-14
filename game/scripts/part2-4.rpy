@@ -1,7 +1,7 @@
 define flipped = Transform(xzoom=-1)
 
-# label avisando_vovo:
-label start:
+label avisando_vovo:
+# label start:
     scene bg_colheita with dissolve
     show getulio at left, flipped
     show tata at right, flipped with moveinleft

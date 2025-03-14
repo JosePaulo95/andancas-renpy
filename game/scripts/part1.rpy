@@ -1,7 +1,7 @@
-label start2:
-# label start:
+# label start2:
+label start:
     # Mostra fundo preto inicialmente
-    $ renpy.music.set_volume(0.0, delay=0, channel='music')
+    # $ renpy.music.set_volume(1.0, delay=0, channel='music')
     scene black with dissolve
     
     tata "Sniff sniff..." 
@@ -9,10 +9,9 @@ label start2:
     
     # O café é sentido enquanto a tela ainda está preta
     "Um delicioso cheiro de café entra pela porta do quarto. Lá fora os passarinhos já estão cantando."
-    play music "audio/Devonshire Waltz Moderato.mp3"
-    $ renpy.music.set_volume(1.0, delay=5.0, channel='music')
+    play music "audio/Devonshire Waltz Moderato.mp3" loop
     # Revela gradualmente o quarto
-    scene bg_quarto with dissolve
+    scene bg_quarto_com_tata with dissolve
     
     tata "ugh... já amanheceu?"
     
@@ -27,14 +26,13 @@ label start2:
     # Volta ao fundo preto
     scene black with dissolve
     getulio "Tatá?"
-    $ renpy.music.set_volume(0.0, delay=5.0, channel='music')
+    stop music fadeout 2.0
     tata "Talvez o vô me deixe dormir mais uma horinha. Eu estava em um sonho tão bom... se eu fechar os olhos agora, acho que consigo retornar pra ele..."
-    play sound "audio/The Complex.mp3"
-    $ renpy.music.set_volume(1.0, delay=5.0, channel='music')
+    play sound "audio/The Complex.mp3" fadein 2.0 loop
     tata "Estou em uma missão, atravessando a floresta sombria. Com minha armadura redonda de casca eu me sinto invencível."
     scene bg_floresta with dissolve
-    show coruja at right
-    coruja "Ei! Você aí!"
+    show coruja_sonho at right
+    coruja_sonho "Ei! Você aí!"
     menu:
         "Quem, eu?":
             show tata
@@ -46,8 +44,8 @@ label start2:
             jump sonho_resposta_ostentosa
 
 label sonho_resposta_humilde:
-    coruja "Está vendo mais alguém aqui, por acaso?!"
-    # Não se vê o rosto da coruja; uma túnica está cobrindo, apenas o bico com um sorriso sarcástico está à mostra.
+    coruja_sonho "Está vendo mais alguém aqui, por acaso?!"
+    # Não se vê o rosto da coruja_sonho; uma túnica está cobrindo, apenas o bico com um sorriso sarcástico está à mostra.
     menu:
         "Saudações, amigo mascarado. Que desventuras o conduziram até esta trilha esquecida por Deus?":
             tata "Saudações, amigo mascarado. Que desventuras o conduziram até esta trilha esquecida por Deus?"
@@ -57,35 +55,36 @@ label sonho_resposta_humilde:
             jump ameaca
 
 label sonho_resposta_ostentosa:
-    # Não se vê o rosto da coruja; uma túnica está cobrindo, apenas o bico com um sorriso sarcástico está à mostra.
-    coruja "De que serve um título tão grande?"
-    coruja "Teu fim será escrito no silêncio da noite, e nem saberás o nome de quem rasgou tua mortalha."
+    # Não se vê o rosto da coruja_sonho; uma túnica está cobrindo, apenas o bico com um sorriso sarcástico está à mostra.
+    coruja_sonho "De que serve um título tão grande?"
+    coruja_sonho "Teu fim será escrito no silêncio da noite, e nem saberás o nome de quem rasgou tua mortalha."
     "Ele começa a sussurrar palavras mágicas."
     jump preparo_garras
 
 label saudacoes_amigo:
-    coruja "- Eu serei... o seu fim!"
+    coruja_sonho "- Eu serei... o seu fim!"
     "Ele levanta os braços e começa a sussurrar palavras mágicas."
     jump preparo_garras
 
 label ameaca:
-    coruja "Então venha... se tiver coragem!"
+    coruja_sonho "Então venha... se tiver coragem!"
     "Ele começa a sussurrar palavras mágicas."
     jump preparo_garras
 
 label preparo_garras:
     "Toda a floresta começa a tremer, um som ensurdecedor." with hpunch
     "Com o terremoto, eu tropeço e caio no chão, não consigo levantar!"
-    hide coruja
+    hide coruja_sonho
     scene black with dissolve
+    stop music fadeout 2.0
     window show
     "Ha ha ha ha!!" with fade
     "Acordar! Preciso acordar!"
     # Retornamos ao quarto de Tatá.
-    show bg_quarto with hpunch
+    show bg_quarto_sem_tata with hpunch
     # with h_punch
     show tata
-    play sound "audio/Failing Defense.mp3"
+    play sound "audio/Failing Defense.mp3" fadein 1.0
     tata "Tudo está tremendo! Então aquela sensação foi real?"
     tata "Ah! O que é isso?!"
     "Um barulho muito forte. Do teto da toca começam a cair areias e pedras."
@@ -107,11 +106,12 @@ label quarto_virar_bola:
             jump quarto_correr_vo_getulio
 
 label quarto_correr_vo_getulio:
-    scene bg_cozinha
+    scene bg_cozinha_clean
     show getulio at center
     "As panelas e louças tremem fazendo barulho." 
     "O vô Getúlio está em pé na frente do armário segurando a porta para impedir uma pilha de copos de vidro de cair no chão."
-    show tata at left
+    show tata at left:
+        xpos 0.1
     getulio "Tatá! Se proteja! Faça a bola!"
     menu:
         "Ajudar ele a segurar os copos":
@@ -127,9 +127,10 @@ label quarto_continuar_bola:
     jump ir_para_a_cozinha
 
 label ir_para_a_cozinha:
-    scene bg_cozinha
+    scene bg_cozinha_clean
     show getulio at center
-    show tata at left with moveinleft
+    show tata at left with moveinleft:
+        xpos 0.1
     "O vô Getúlio está de pé perto do armário, com a mão machucada. Com o tremor vários copos caíram e se quebraram no chão, devem ter machucado ele. Uma bagunça."
     jump meu_deus_o_que_foi_isso
 

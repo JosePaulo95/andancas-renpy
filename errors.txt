@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/part2-4.rpy", line 6: end of line expected.
-    show getulio, flipped at left
-                ^
+File "game/scripts/part1.rpy", line 87: expected end of line
+    play sound "audio/Failing Defense.mp3" with fadein 1.0
+                                           ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Thu Feb 13 17:24:44 2025
+Thu Feb 13 18:54:44 2025

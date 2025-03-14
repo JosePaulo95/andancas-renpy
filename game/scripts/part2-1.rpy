@@ -2,7 +2,7 @@ label sair_de_casa:
     jump indo_pra_vila
 
 label indo_pra_vila:
-    scene bg_village with dissolve
+    scene bg_village_manha with dissolve
     pause 1
     show tata at left with moveinleft
     pause 1
